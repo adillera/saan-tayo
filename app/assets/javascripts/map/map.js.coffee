@@ -6,7 +6,7 @@
   initialize: ->
     nav = navigator.geolocation
     if nav
-      nav.watchPosition(@loadMap)
+      nav.getCurrentPosition(@loadMap)
 
     else
       alert('Navigator not supported by your browser... Try Chrome maybe..?')
