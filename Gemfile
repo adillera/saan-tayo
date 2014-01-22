@@ -10,7 +10,9 @@ gem 'rails', '4.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
-gem 'haml-rails'
+gem 'haml-rails', '>= 0.4'
+
+gem 'underscore-rails', '>= 1.5.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
