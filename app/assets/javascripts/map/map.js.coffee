@@ -4,9 +4,23 @@
 
 @GMap = ->
   initialize: ->
+    nav = navigator.geolocation
+    if nav
+      nav.watchPosition(@loadMap)
+
+    else
+      alert('Navigator not supported by your browser... Try Chrome maybe..?')
+
+
+  loadMap: (position) ->
+    longitude = position.coords.longitude
+    latitude  = position.coords.latitude
+
     mapOptions =
-      center: new google.maps.LatLng(-34.397, 150.644)
-      zoom: 8
+      center: new google.maps.LatLng(latitude, longitude)
+      zoom: 18
+      zoomControl: true
+      mapTypeControl: false
 
     map = new google.maps.Map($('#map-container')[0], mapOptions)
 
