@@ -30,7 +30,7 @@ SaanTayo::Application.configure do
   config.assets.compile = false
 
   # Add these javascripts to precompile
-  config.assets.precompile += %w( map/map.js )
+  config.assets.precompile += %w( map/* )
 
   # Generate digests for assets URLs.
   config.assets.digest = true
