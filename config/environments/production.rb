@@ -29,6 +29,9 @@ SaanTayo::Application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
+  # Add these javascripts to precompile
+  config.assets.precompile += %w( map/map.js )
+
   # Generate digests for assets URLs.
   config.assets.digest = true
 
