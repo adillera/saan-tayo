@@ -1,5 +1,50 @@
+html, body {
+  height: 100%
+}
+
 * {
   padding: 0;
   margin: 0;
-  height: 100%
+  font-family: 'Actor', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+
+#main-nav {
+  height: 8%;
+  width: 100%;
+  float: left;
+  color: #ffffff;
+  background-color: #202020;
+}
+
+#app-title {
+  color: #ffffff;
+}
+
+#app-name {
+  margin: 0.5% 0 0 3%;
+}
+
+#footer {
+  height: 2.3%;
+  width: 100%;
+  float: left;
+  padding: 1.5% 0;
+  color: #ffffff;
+  background-color: #202020;
+  text-align: center;
+}
+
+/*Colors*/
+.red {
+  color: #ff0033;
 }
