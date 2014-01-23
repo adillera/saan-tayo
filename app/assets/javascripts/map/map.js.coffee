@@ -17,11 +17,11 @@
 
   loadMap: (position) ->
     @position = position
-    longitude = @position.coords.longitude
-    latitude  = @position.coords.latitude
+    @longitude = @position.coords.longitude
+    @latitude  = @position.coords.latitude
 
     mapOptions =
-      center: new google.maps.LatLng(latitude, longitude)
+      center: new google.maps.LatLng(@latitude, @longitude)
       zoom: 18
       zoomControl: true
       mapTypeControl: false
@@ -32,6 +32,13 @@
 
 
   dropUserPin: ->
+    position = new google.maps.LatLng(@latitude, @longitude)
+
+    marker = new google.maps.Marker
+      position: position
+      map: @map
+      title: 'wee'
+      clickable: false
 
 newMap = new GMap
 newMap.initialize()
