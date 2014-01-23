@@ -8,6 +8,10 @@ html, body {
   font-family: 'Actor', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 #main {
   height: 100%;
   width: 100%;
@@ -20,6 +24,10 @@ html, body {
   float: left;
   color: #ffffff;
   background-color: #202020;
+}
+
+#app-title {
+  color: #ffffff;
 }
 
 #app-name {

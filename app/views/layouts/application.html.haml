@@ -13,7 +13,8 @@
     %div{ id: 'main' }
       %div{ id: 'main-nav' }
         %h1{ id: 'app-name' }
-          Saan<span class='red'><strong>Tayo</strong></span>
+          = link_to root_path, id: 'app-title' do
+            Saan<span class='red'><strong>Tayo</strong></span>
       = yield
       %footer{ id: 'footer' }
         Pisara<span class='red'><strong>Labs</strong></span>, Inc.
