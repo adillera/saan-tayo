@@ -3,7 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #map-container {
-  width: 100%;
+  width: 75%;
   height: 83.95%;
   float: left;
+}
+
+#suggestions-panel {
+  width: 23.9%;
+  height: 82.95%;
+  float: left;
+  border-left: 1px solid #202020;
+  padding: 0.5% 0.5%;
 }
