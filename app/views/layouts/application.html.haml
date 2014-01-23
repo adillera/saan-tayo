@@ -4,9 +4,16 @@
     %title
       Saan Tayo
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Actor'
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAwss6EftIXFsQkNYrNSZj02ctdby7yzZ0&sensor=true'
     = csrf_meta_tags
 
   %body
-    = yield
+    %div{ id: 'main' }
+      %div{ id: 'main-nav' }
+        %h1{ id: 'app-name' }
+          Saan<span class='red'><strong>Tayo</strong></span>
+      = yield
+      %footer{ id: 'footer' }
+        Pisara<span class='red'><strong>Labs</strong></span>, Inc.
